@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+
+
+{% block body %}
+<section class="header">
+<ul>
+<form action="{{ url_for('thanks') }}" method="POST">
+	<li><input type="text" name="name" placeholder="type your name here please"></li>
+	<li><input type="email" name="email" placeholder="please enter your email"></li>
+	<li><input type="number" name="number" placeholder="please enter your phone #"></li>
+	<button>SUBMIT</button> 
+</form>
+</ul>
+</section>
+{% endblock %}
